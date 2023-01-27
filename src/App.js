@@ -20,13 +20,11 @@ axios.defaults.params ={};
 axios.defaults.params["api_key"]= "c54ab2f18bdf2fcbf4283c5aa5ab488c";
 
 function App() {
-  return (
-  <Routes>
+  return <Routes>
     <Route path="/" element={<HomePage />} />
     <Route path="/movie/:id" element={<MoviePage />} />
     <Route path="/plays" element={<PlayPage />} />
   </Routes>
-  )
 }
 
 export default App;
